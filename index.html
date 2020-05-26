@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta content="Theo Cochin site personnel" property="og:title">
+<meta content="#00201e" property="theme-color">
+<title>Theo Cochin site personnel</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+<link rel="shortcut icon" href="docs/cms.png" />
+<meta name="description" content="Le site de Theo Cochin">
+<meta property="og:description" content="Le site de Theo Cochin">
+<script type="text/javascript" src="js/notify.js"></script>
+<meta property="og:type" content="website">
+
+
+</head>
+<body bgcolor="#1c1c1c">
+
+<div id="acceuil">
+<div id="introText">
+	<h1>Retrouvez mon développement personnel:
+	</h1>
+</div>
+
+	<div class="textes">	
+		
+		<div id="propos">
+			<a href="#contact" target="_blank" onMouseover="document.bgColor='#632e3b'" onMouseout="document.bgColor='#1c1c1c'">
+			<h2>à mon propos</a> &middot;&nbsp; </h2> 
+		</div>
+
+		<div id="linkedin">
+			<a href="https://www.linkedin.com/in/th%C3%A9o-cochin-2ab53717a/" target="_blank" onMouseover="document.bgColor='#4d617a'" onMouseout="document.bgColor='#1c1c1c'">
+			<h2>linkedin</a> &middot;&nbsp; </h2> 
+		</div>
+
+		<div id="github">
+			<a href="https://github.com/tcochin" target="_blank" onMouseover="document.bgColor='#473d3f'" onMouseout="document.bgColor='#1c1c1c'">
+			<h2>github</a> &middot;&nbsp; </h2> 
+		</div>
+
+		<div id="contact">
+			<a href="#a_propos" target="_blank" onMouseover="document.bgColor='#6b8774'" onMouseout="document.bgColor='#1c1c1c'">
+			<h2>me contacter</a> &nbsp; </h2> 
+		</div>
+	</div>
+
+	<img src="docs/photo_profile.jpg" alt="TheoProfil" class="center">
+</div>
+
+<div id="contenu">
+	<div class="paragraphe" id="a_propos">
+		<h1>A propos de moi</h1><br>
+		<h2>Jeune étudiant à l'ITEEM, formation de l'école Centrale de Lille en partenariat avec la Skema Buisness School,
+		où j'étudie à la fois les sciences techniques, économique et managériales. Je sais donc me montrer flexible et 
+		polyvalent.
+		<br><br>
+		Je suis très intéressé par de nombreux domaines scientifiques et culturel. Au cours de ma formation à l'ITEEM, j'ai
+		pu apprendre les bases des sciences de l'ingénieur, avec notament des cours sur le développement en informatique où
+		j'ai pu découvrir l'HTML, le PHP, le CSS, le C++, et la création et gestion de bases de données en SQL. J'ai pu
+		approfondir cet apprentissage avec des formations en JavaScript, et le travail sur des projets dont notamment ceux
+		disponnible sur mon Github.
+		<br><br>
+		Je suis actuellement à la recherche d'un stage autour du domaine du développement informatique, Web ou de la gestion
+		de bases de données entre le 22 juin et le 29 août. Je souhaite travailler dans le numérique afin de mieux saisir les 
+		clés du monde de demain, mais également car je pense pouvoir apporter sur ce secteur qui m'intéresse tant. N'hésitez pas à
+		me contacter si vous seriez intéressés par mon profil.
+		</h2>
+	</div>
+	
+	<div class="paragraphe" id="contact">
+		<h1>Me contacter</h1><br>
+		<h2>Vous pouvez me joindre par mail à: 
+		<a onclick="copier()" href="#a_propos">theo.cochin@gmail.com</a>
+		<br>(cliquer pour copier dans le press-papier)
+		<br><br>
+		Par téléphone au 0786820995
+		<br><br>
+		Ou encore par message privé sur mon Linkedin
+		</h2>
+	</div>
+	<input type="text" value="theo.cochin@gmail.com" id="email" style="display:none; position: relative; left: -10000px;">
+
+	<script>
+
+
+      function copier() {
+		var copyText = document.getElementById("email");
+        copyText.style.display = 'block';
+        copyText.focus();
+        copyText.select();
+        document.execCommand('SelectAll');
+        document.execCommand("Copy", false, null);
+        copyText.style.display = 'none';
+
+        window.notificationService.notify({
+        text: 'Email copié !',
+        type: 'success',
+        position: 'top-right',
+        autoClose: true,
+        duration: 1000,
+      })
+      }
+  </script>
+</div>
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<!--<script src="./js/script.js"></script>-->
+
+</body>
+</html>
